@@ -1,0 +1,17 @@
+title: "Patrick Hurley blog"
+description: "Learnings, experiments, and research notes."
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+minima:
+  skin: auto
+  
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - README.md
+  - _drafts
