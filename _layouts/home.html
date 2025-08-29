@@ -8,7 +8,8 @@ layout: default
 {% assign last_date = "" %}
 
 {% for post in site.posts %}
-{% assign post_date = post.date | date: "%d %B %Y" %}
+{% assign post_timestamp = post.date | date: "%s" | plus: 3600 %}
+{% assign post_date = post_timestamp | date: "%d %B %Y" %}
 
 {% if post_date != last_date %}
 {% unless forloop.first %}
