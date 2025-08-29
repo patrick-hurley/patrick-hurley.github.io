@@ -12,6 +12,13 @@ minima:
 markdown: kramdown
 highlighter: rouge
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post_index.json
+
 exclude:
   - README.md
   - _drafts
