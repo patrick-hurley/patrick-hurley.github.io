@@ -8,6 +8,28 @@ layout: default
         <h1>{{ page.list_title }}</h1>
         <p>{{ page.content }}</p>
 
+        {% assign sorted_tags = site.tags | sort: "size" %}
+        {% assign sorted_tags = sorted_tags | sort: "last" | reverse %}
+
+        <div class="top-tags">
+            <strong>Popular tags:</strong>
+            <ul class="tags-list">
+                {% assign count = 0 %}
+                {% for tag in site.tags %}
+                {% assign tag_name = tag[0] %}
+                {% assign tag_count = tag[1] | size %}
+                <li>
+                    <a href="{{ '/tags/' | append: tag_name | relative_url }}">{{ tag_name }} ({{ tag_count }})</a>
+                </li>
+                {% assign count = count | plus: 1 %}
+                {% if count == 5 %}
+                {% break %}
+                {% endif %}
+                {% endfor %}
+                <li><a href="{{ '/tags/' | relative_url }}">View all tags</a></li>
+            </ul>
+        </div>
+
         {% assign last_date = "" %}
         {% assign featured_posts = site.posts | where:"display","featured" %}
 
