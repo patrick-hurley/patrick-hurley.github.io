@@ -6,6 +6,8 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+excerpt_separator: "<!--end-preview-->"
+
 minima:
   skin: auto
   
