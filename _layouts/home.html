@@ -12,9 +12,10 @@ layout: default
         {% assign featured_posts = site.posts | where:"display","featured" %}
 
         {% for post in site.posts %}
-        {% assign post_timestamp = post.date | date: "%s" | plus: 3600 %} {# Adjust UTC → BST #}
+        {% comment %} Convert UTC → BST {% endcomment %}
+        {% assign post_timestamp = post.date | date: "%s" | plus: 3600 %}
         {% assign post_date = post_timestamp | date: "%d %B %Y" %}
-        {% assign post_time = post_timestamp | date: "%I:%M%P" %} {# 12:34pm format #}
+        {% assign post_time = post_timestamp | date: "%I:%M%P" %}
 
         {% if post_date != last_date %}
         {% unless forloop.first %}
@@ -27,8 +28,7 @@ layout: default
             <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
 
             {% if post.content contains '<!--end-preview-->' %}
-            {% assign excerpt_content = post.content | split:'<!--end-preview-->' | first %}
-            {{ excerpt_content }}
+            {{ post.excerpt }}
             <a href="{{ post.url | relative_url }}">Read more</a>
             {% else %}
             {{ post.content }}
