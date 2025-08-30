@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Blog init test"
+title: "Blog home"
 list_title: "Recent posts"
 ---
 
