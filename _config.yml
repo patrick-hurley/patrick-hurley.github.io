@@ -1,4 +1,4 @@
-title: "Patrick Hurley blog"
+title: "Patrick Hurley's blog"
 description: "Learnings, experiments, and research notes."
 theme: minima
 plugins:
@@ -11,13 +11,6 @@ minima:
   
 markdown: kramdown
 highlighter: rouge
-
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: post_index.json
 
 exclude:
   - README.md

@@ -7,9 +7,9 @@
             <a href="{{ '/' | relative_url }}">Home</a>
             <a href="{{ '/about' | relative_url }}">About</a>
         </nav>
+        <form action="{{ '/search/' | relative_url }}" method="get">
+            <input type="text" name="q" placeholder="Search..." required>
+            <button type="submit">Search</button>
+        </form>
     </div>
-    <form action="{{ '/search/' | relative_url }}" method="get">
-        <input type="text" name="q" placeholder="Search..." required>
-        <button type="submit">Search</button>
-    </form>
 </header>
