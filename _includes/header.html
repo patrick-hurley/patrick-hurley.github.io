@@ -8,8 +8,8 @@
             <a href="{{ '/about' | relative_url }}">About</a>
         </nav>
     </div>
-    <form id="search-form" action="#" method="get">
-        <input type="text" id="search-box" placeholder="Search posts..." />
-        <ul id="search-results"></ul>
+    <form action="{{ '/search/' | relative_url }}" method="get">
+        <input type="text" name="q" placeholder="Search..." required>
+        <button type="submit">Search</button>
     </form>
 </header>
