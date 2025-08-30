@@ -8,18 +8,35 @@ layout: default
         <h1>{{ page.list_title }}</h1>
         <p>{{ page.content }}</p>
 
-        {% assign sorted_tags = site.tags | sort: "size" %}
-        {% assign sorted_tags = sorted_tags | sort: "last" | reverse %}
+        {% assign tag_array = "" | split: "" %}
+
+        {% for tag in site.tags %}
+        {% assign tag_name = tag[0] %}
+        {% assign post_count = tag[1] | size %}
+        {% assign tag_array = tag_array | push: tag_name | push: post_count %}
+        {% endfor %}
+
+        {% comment %} Now sort tag_array manually by post_count (every second item in the array) {% endcomment %}
+        {% assign tag_pairs = "" | split: "" %}
+        {% for i in (0..tag_array.size | minus:2) step:2 %}
+        {% assign pair = tag_array[i] | append: "," | append: tag_array[i+1] %}
+        {% assign tag_pairs = tag_pairs | push: pair %}
+        {% endfor %}
+
+        {% assign sorted_pairs = tag_pairs | sort_natural | reverse %}
 
         <div class="top-tags">
             <strong>Popular tags:</strong>
             <ul class="tags-list">
                 {% assign count = 0 %}
-                {% for tag in site.tags %}
-                {% assign tag_name = tag[0] %}
-                {% assign tag_count = tag[1] | size %}
+                {% for pair in sorted_pairs %}
+                {% assign parts = pair | split: "," %}
+                {% assign tag_name = parts[0] %}
+                {% assign post_count = parts[1] %}
                 <li>
-                    <a href="{{ '/tags/' | append: tag_name | relative_url }}">{{ tag_name }} ({{ tag_count }})</a>
+                    <a href="{{ '/tags/' | append: tag_name | relative_url }}">
+                        {{ tag_name }} ({{ post_count }})
+                    </a>
                 </li>
                 {% assign count = count | plus: 1 %}
                 {% if count == 5 %}
