@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Testing multi pages
+<p>Testing multi pages</p>
