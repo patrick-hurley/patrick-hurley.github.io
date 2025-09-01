@@ -26,15 +26,16 @@ layout: default
 
             <article class="home-post">
                 <a class="home-post--title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-
-                {% if post.content contains '<!--end-preview-->' %}
-                <div class="home-post--excerpt">
-                    {{ post.excerpt }}
-                    <a class=" home-post--more" href="{{ post.url | relative_url }}">[... read more]</a>
+                <div class="home-post--content">
+                    {% if post.content contains '<!--end-preview-->' %}
+                    <div class="home-post--excerpt">
+                        {{ post.excerpt }}
+                        <a class=" home-post--more" href="{{ post.url | relative_url }}">[... read more]</a>
+                    </div>
+                    {% else %}
+                    {{ post.content }}
+                    {% endif %}
                 </div>
-                {% else %}
-                {{ post.content }}
-                {% endif %}
 
                 <div class="home-post--meta">
                     <span class="home-post--time">{{ post_time }} /</span>

@@ -10,6 +10,12 @@ $color-accent: #b214ab;
     padding-right: 30px;
     padding-left: 30px;
 }
+@media screen and (max-width: 800px) {
+  .wrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
 
 .col-container {
   display: flex;
@@ -50,7 +56,7 @@ $color-accent: #b214ab;
 }
 
 @media screen and (max-width: 800px) {
-  .container {
+  .col-container {
     flex-direction: column;
   }
   .main-content, .sidebar {
@@ -66,11 +72,37 @@ $color-accent: #b214ab;
 .site-header--content {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+.site-title {
+    font-size: 26px;
+    line-height: 26px;
+}
+.site-title a {
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    @media screen and (max-width: 800px) {
+        font-size: 20px;
+    }
+}
+.site-nav {
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    top: 0;
+    right: 0;
+    line-height: initial;
+    gap: 10px;
 }
 .site-nav a, .site-nav a:visited {
-    margin-left: 15px;
     background: $color-accent;  
     color: #ffffff;
     padding: 3px 10px;  
@@ -98,6 +130,16 @@ $color-accent: #b214ab;
         border: none;
         padding: 5px 10px;
         cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sub-header {
+        padding-top: 10px;
+        padding-bottom: 15px;
+        .col-container {
+        gap: 10px;
+        }
     }
 }
 .top-tags {
@@ -130,12 +172,6 @@ a, a:visited {
     font-weight: 600;
 }
 
-.site-title a {
-    font-weight: 500;
-    font-size: 35px;
-    letter-spacing: 1.5px;
-}
-
 .post-tags a, .post-tags a:visited {
     background: $color-accent;
     color: white;
@@ -143,6 +179,15 @@ a, a:visited {
     border-radius: 3px;
     text-decoration: none;
     margin-right: 5px;
+}
+
+.post-meta 
+{
+    color: black;
+    margin-top: -10px;
+    p {
+        margin-bottom: 0;
+    }
 }
 
 /* Home Page */
@@ -159,6 +204,9 @@ a, a:visited {
         text-decoration: underline;
         margin-bottom: 15px;
         font-size: 20px;
+    }
+    &--content {
+        font-weight: 200;
     }
     &--excerpt {
         display: flex;    
