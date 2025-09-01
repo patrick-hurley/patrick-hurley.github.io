@@ -2,57 +2,46 @@
 ---
 $color-accent: #b214ab;
 
-/* Container for two columns */
+.wrapper {
+    max-width: -webkit-calc(940px - (30px * 2));
+    max-width: calc(940px - (30px * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
 .col-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem; 
+  gap: 30px; 
   justify-content: space-between;
 }
 
-/* Main content column */
 .main-content {
-  flex: 1 1 65%;
+  flex: 1;
 }
 
-/* Featured posts in sidebar */
+.sidebar {
+  width: 250px;
+}
+
 .sidebar .featured ul {
   list-style: none;
   padding-left: 0;
+  margin: 0;
 }
 
 .sidebar .featured li {
-  margin-bottom: 0.5em;
+  margin-bottom: 8px;
 }
 
-/* Thin HR line between posts */
-.main-content article hr {
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-}
-
-/* Headings spacing */
 .main-content h2 {
   margin-bottom: 10px;
 }
 
 .main-content h3 {
-  margin-bottom: 10px;
-}
-
-/* Tags + time styling */
-.main-content p {
-  font-size: 0.9em;
-  color: #555;
-  margin-bottom: 1em;
-}
-
-/* Links styling */
-.main-content p a,
-.sidebar a {
-  color: $color-accent;
-  text-decoration: none;
+  margin-bottom: 0;
 }
 
 .main-content p a:hover,
@@ -72,7 +61,13 @@ $color-accent: #b214ab;
 
 /* Header */
 .site-header {
-    padding-top: 15px;
+    border-top: none;
+}
+.site-header--content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 .site-nav a, .site-nav a:visited {
     margin-left: 15px;
@@ -87,6 +82,19 @@ $color-accent: #b214ab;
     padding-top: 5px;
     padding-bottom:5px;
     background: #000000;
+    input {
+        background: white;
+        padding: 5px;
+        border: none;
+        width: 180px;
+    }
+    button {
+        background: white;
+        color: black;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
 }
 .top-tags {
     display: flex;
@@ -108,13 +116,19 @@ $color-accent: #b214ab;
 }
 
 /* Typography */
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: $color-accent;
+}
 a, a:visited {
     color: #000000;
     font-weight: 600;
 }
 
 .site-title a {
-    font-weight: 200;
+    font-weight: 500;
+    font-size: 35px;
     letter-spacing: 1.5px;
 }
 
@@ -124,4 +138,29 @@ a, a:visited {
     padding: 2px 6px;
     border-radius: 3px;
     text-decoration: none;
+}
+
+/* Home Page */
+.home-date {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.home-post {
+    padding-top: 20px;
+    padding-bottom: 10px;;
+    &--title {
+        display: block;
+        text-decoration: underline;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    &--excerpt {
+        display: flex;    
+        a {
+            font-weight: 300;
+            color: $color-accent;
+            margin-left: 10px;
+        }
+    }
 }
