@@ -8,6 +8,9 @@ plugins:
 
 excerpt_separator: "<!--end-preview-->"
 
+timezone: Europe/London
+future: true
+
 minima:
   skin: auto
   
