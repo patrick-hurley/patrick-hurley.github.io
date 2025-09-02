@@ -174,11 +174,14 @@ a, a:visited {
 
 .post-tags a, .post-tags a:visited {
     background: $color-accent;
-    color: white;
+    color: white !important;
     padding: 2px 6px;
     border-radius: 3px;
-    text-decoration: none;
+    text-decoration: none !important;
     margin-right: 5px;
+    &:hover {
+        text-decoration: underline !important;
+    }
 }
 
 .post-meta 
@@ -209,15 +212,16 @@ a, a:visited {
         font-weight: 200;
     }
     &--excerpt {
-        display: flex;    
         a {
             font-weight: 300;
             color: $color-accent;
-            margin-left: 10px;
         }
     }
     &--time {
         margin-right: 2px;
+    }
+    &--meta {
+        margin-top: 10px;
     }
    
 }
@@ -231,7 +235,7 @@ a, a:visited {
 }
 
 /* Content */
-.content p {
+.content p, .content li {
     line-height: 28px;
     font-weight: 200;
 }

@@ -30,7 +30,7 @@ layout: default
                     {% if post.content contains '<!--end-preview-->' %}
                     <div class="home-post--excerpt">
                         {{ post.excerpt }}
-                        <a class=" home-post--more" href="{{ post.url | relative_url }}">[... read more]</a>
+                        <a class="home-post--more" href="{{ post.url | relative_url }}">[...read more]</a>
                     </div>
                     {% else %}
                     {{ post.content }}
