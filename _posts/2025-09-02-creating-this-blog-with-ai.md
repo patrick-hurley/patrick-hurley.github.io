@@ -32,8 +32,6 @@ Initially I tried to vibe code as much as possible - building the project struct
 
 Despite the issues, leaning heavily on ChatGPT in this way still drastically reduced the time it would have taken me to build this blog. I've ended up with a custom blog complete with tagging and search functionality, and an understanding of Jekyll I didn’t have before — something I probably wouldn’t have taken the time to learn otherwise. 
 
-The idea that this blog could be achieved by someone without a good level of coding knowledge (at least for the features I wanted to add, and in this time frame), feels like a stretch. This could of course be down to my wording of prompts rather than the LLM itself, but in any case I'm happy with the result. It's provided me with my first article too.
-
 
 
 
