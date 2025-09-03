@@ -1,0 +1,38 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: Brighton beach-inspired sky and court -->
+  <rect x="0" y="0" width="400" height="150" fill="#87CEEB"/>
+  <rect x="0" y="150" width="400" height="150" fill="#D2B48C"/>
+  <!-- Basketball court lines -->
+  <rect x="50" y="170" width="300" height="100" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+  <circle cx="200" cy="220" r="20" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+
+  <!-- Basketball hoop and backboard -->
+  <rect x="320" y="50" width="60" height="80" fill="#FFFFFF" stroke="#000" stroke-width="2"/>
+  <rect x="310" y="130" width="20" height="10" fill="none" stroke="#FF4500" stroke-width="3"/>
+  <circle cx="320" cy="135" r="5" fill="none" stroke="#FF4500" stroke-width="3"/>
+
+  <!-- Seagull body (tilted for dunking pose) -->
+  <ellipse cx="280" cy="140" rx="40" ry="60" fill="#FFFFFF" stroke="#000" stroke-width="2" transform="rotate(-20 280 140)"/>
+  <!-- Head -->
+  <circle cx="300" cy="90" r="20" fill="#FFFFFF" stroke="#000" stroke-width="2"/>
+  <!-- Beak -->
+  <path d="M300 90 L320 85 L300 95 Z" fill="#FFA500" stroke="#000" stroke-width="1"/>
+  <!-- Eye -->
+  <circle cx="305" cy="85" r="3" fill="#000000"/>
+  <!-- Left wing (flapping upward) -->
+  <path d="M260 140 C240 100, 240 80, 260 120" fill="#FFFFFF" stroke="# (%#000" stroke-width="2" transform="rotate(-30 260 140)"/>
+  <!-- Right wing (extended for balance) -->
+  <path d="M300 140 C320 100, 320 80, 300 120" fill="#FFFFFF" stroke="#000" stroke-width="2" transform="rotate(10 300  Globe140)"/>
+  <!-- Legs and feet gripping basketball -->
+  <path d="M280 180 L275 200 L270 205" stroke="#FFA500" stroke-width="4" fill="none"/>
+  <path d="M290 180 L295 200 L300 205" stroke="#FFA500" stroke-width="4" fill="none"/>
+  <!-- Webbed feet on ball -->
+  <path d="M270 205 L265 210 L275 210 Z" fill="#FFA500" stroke="#000" stroke-width="1"/>
+  <path d="M300 205 L295 210 L305 210 Z" fill="#FFA500" stroke="#000" stroke-width="1"/>
+  <!-- Basketball -->
+  <circle cx="285" cy="210" r="15" fill="#FF4500" stroke="#000" stroke-width="2"/>
+  <path d="M285 195 L285 225" fill="none" stroke="#000" stroke-width="1"/>
+  <path d="M270 210 L300 210" fill="none" stroke="#000" stroke-width="1"/>
+  <!-- Tail feathers -->
+  <path d="M250 160 C240 170, 240 180, 250 190" fill="#FFFFFF" stroke="#000" stroke-width="2" transform="rotate(-20 250 160)"/>
+</svg>

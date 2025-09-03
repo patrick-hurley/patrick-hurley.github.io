@@ -3,6 +3,7 @@ layout: post
 title: "Creating this blog with AI"
 date: 2025-09-02 15:02:00 +0100
 tags: [ai, jekyll]
+display: 'featured'
 ---
 
 With this blog being focused on AI, it felt fitting to use its creation as a chance to test the current capabilities of LLMs. I decided to use the recently released `ChatGPT-5` model, starting by asking for the pros and cons of four blog options:

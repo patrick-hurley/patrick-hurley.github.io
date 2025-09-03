@@ -1,0 +1,28 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Basketball hoop -->
+  <rect x="500" y="50" width="20" height="150" fill="#964B00"/>
+  <circle cx="510" cy="50" r="40" fill="#964B00" stroke="#786C3B" stroke-width="5"/>
+  <rect x="450" y="190" width="120" height="10" fill="#964B00"/>
+
+  <!-- Basketball -->
+  <circle cx="480" cy="120" r="20" fill="#FFC080" stroke="#786C3B" stroke-width="2"/>
+  <line x1="480" y1="100" x2="480" y2="140" stroke="#786C3B" stroke-width="2"/>
+  <line x1="460" y1="120" x2="500" y2="120" stroke="#786C3B" stroke-width="2"/>
+
+  <!-- Seagull body -->
+  <ellipse cx="200" cy="150" rx="40" ry="60" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <path d="M 160 170 L 140 220 L 180 240 Z" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <path d="M 240 170 L 260 220 L 220 240 Z" fill="#FFFFFF" stroke="#000000" stroke-width="2"/>
+  <circle cx="200" cy="140" r="10" fill="#000000"/>
+
+  <!-- Seagull legs -->
+  <line x1="190" y1="210" x2="190" y2="240" stroke="#964B00" stroke-width="5"/>
+  <line x1="210" y1="210" x2="210" y2="240" stroke="#964B00" stroke-width="5"/>
+
+  <!-- Seagull arms -->
+  <line x1="180" y1="160" x2="150" y2="140" stroke="#000000" stroke-width="3"/>
+  <line x1="220" y1="160" x2="250" y2="140" stroke="#000000" stroke-width="3"/>
+
+  <!-- Seagull holding basketball -->
+  <line x1="250" y1="140" x2="460" y2="120" stroke="#000000" stroke-width="2" stroke-dasharray="5,5"/>
+</svg>

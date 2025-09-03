@@ -1,0 +1,106 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky background -->
+  <rect x="0" y="0" width="400" height="200" fill="#87CEEB"/>
+  
+  <!-- Court floor -->
+  <rect x="0" y="200" width="400" height="100" fill="#8B4513"/>
+  
+  <!-- Court lines -->
+  <line x1="0" y1="250" x2="400" y2="250" stroke="white" stroke-width="3"/>
+  <circle cx="100" cy="250" r="40" fill="none" stroke="white" stroke-width="2"/>
+  <line x1="50" y1="200" x2="50" y2="300" stroke="white" stroke-width="2"/>
+  
+  <!-- Basketball hoop post -->
+  <rect x="45" y="120" width="10" height="80" fill="#654321"/>
+  
+  <!-- Backboard -->
+  <rect x="25" y="110" width="40" height="25" fill="white" stroke="#333" stroke-width="2"/>
+  
+  <!-- Basketball hoop -->
+  <ellipse cx="50" cy="140" rx="20" ry="6" fill="none" stroke="#FF5722" stroke-width="4"/>
+  
+  <!-- Net -->
+  <path d="M 30 140 Q 32 150 30 160" fill="none" stroke="white" stroke-width="1.5"/>
+  <path d="M 38 140 Q 40 150 38 160" fill="none" stroke="white" stroke-width="1.5"/>
+  <path d="M 46 140 Q 48 150 46 160" fill="none" stroke="white" stroke-width="1.5"/>
+  <path d="M 54 140 Q 56 150 54 160" fill="none" stroke="white" stroke-width="1.5"/>
+  <path d="M 62 140 Q 64 150 62 160" fill="none" stroke="white" stroke-width="1.5"/>
+  <path d="M 70 140 Q 68 150 70 160" fill="none" stroke="white" stroke-width="1.5"/>
+  
+  <!-- Basketball in mid-air -->
+  <circle cx="120" cy="120" r="18" fill="#FF7043"/>
+  <!-- Basketball seam lines -->
+  <path d="M 102 120 Q 120 105 138 120" fill="none" stroke="#BF360C" stroke-width="2"/>
+  <path d="M 102 120 Q 120 135 138 120" fill="none" stroke="#BF360C" stroke-width="2"/>
+  <line x1="120" y1="102" x2="120" y2="138" stroke="#BF360C" stroke-width="2"/>
+  
+  <!-- Seagull in jumping pose -->
+  <!-- Seagull body -->
+  <ellipse cx="200" cy="160" rx="45" ry="20" fill="white"/>
+  
+  <!-- Seagull head -->
+  <circle cx="155" cy="145" r="25" fill="white"/>
+  
+  <!-- Seagull beak -->
+  <polygon points="125,145 108,149 125,153" fill="#FF9800"/>
+  
+  <!-- Seagull eye -->
+  <circle cx="146" cy="136" r="5" fill="black"/>
+  <circle cx="148" cy="134" r="2" fill="white"/>
+  
+  <!-- Wings spread wide for balance -->
+  <ellipse cx="235" cy="155" rx="35" ry="15" fill="#E0E0E0" transform="rotate(30 235 155)"/>
+  <ellipse cx="240" cy="152" rx="28" ry="12" fill="white" transform="rotate(30 240 152)"/>
+  <ellipse cx="255" cy="145" rx="12" ry="5" fill="#424242" transform="rotate(30 255 145)"/>
+  
+  <!-- Other wing -->
+  <ellipse cx="175" cy="155" rx="35" ry="15" fill="#E0E0E0" transform="rotate(-30 175 155)"/>
+  <ellipse cx="170" cy="152" rx="28" ry="12" fill="white" transform="rotate(-30 170 152)"/>
+  <ellipse cx="155" cy="145" rx="12" ry="5" fill="#424242" transform="rotate(-30 155 145)"/>
+  
+  <!-- Seagull legs in jumping position -->
+  <line x1="185" y1="180" x2="175" y2="200" stroke="#FF9800" stroke-width="4"/>
+  <line x1="215" y1="180" x2="225" y2="200" stroke="#FF9800" stroke-width="4"/>
+  
+  <!-- Webbed feet -->
+  <ellipse cx="175" cy="205" rx="8" ry="4" fill="#FF9800"/>
+  <ellipse cx="225" cy="205" rx="8" ry="4" fill="#FF9800"/>
+  
+  <!-- Webbing details -->
+  <path d="M 170 205 Q 172 207 175 205 Q 178 207 180 205" fill="none" stroke="#F57C00" stroke-width="1"/>
+  <path d="M 220 205 Q 222 207 225 205 Q 228 207 230 205" fill="none" stroke="#F57C00" stroke-width="1"/>
+  
+  <!-- Seagull tail feathers -->
+  <polygon points="245,165 265,160 260,175" fill="white"/>
+  <polygon points="253,162 260,161 258,172" fill="#E0E0E0"/>
+  
+  <!-- Motion trail from seagull's previous position -->
+  <ellipse cx="180" cy="180" rx="35" ry="15" fill="white" opacity="0.3"/>
+  <circle cx="140" cy="165" r="20" fill="white" opacity="0.3"/>
+  
+  <!-- Basketball trajectory line -->
+  <path d="M 138 120 Q 90 110 55 135" fill="none" stroke="#FFD700" stroke-width="3" stroke-dasharray="8,4" opacity="0.8"/>
+  
+  <!-- Action lines showing movement -->
+  <line x1="280" y1="170" x2="300" y2="175" stroke="#DDD" stroke-width="3" opacity="0.7"/>
+  <line x1="285" y1="190" x2="305" y2="195" stroke="#DDD" stroke-width="3" opacity="0.7"/>
+  <line x1="290" y1="210" x2="310" y2="215" stroke="#DDD" stroke-width="3" opacity="0.7"/>
+  
+  <!-- Crowd of seagulls in background cheering -->
+  <ellipse cx="320" cy="240" rx="15" ry="8" fill="white"/>
+  <circle cx="310" cy="235" r="8" fill="white"/>
+  <polygon points="300,235 295,237 300,239" fill="#FF9800"/>
+  
+  <ellipse cx="350" cy="240" rx="15" ry="8" fill="white"/>
+  <circle cx="340" cy="235" r="8" fill="white"/>
+  <polygon points="330,235 325,237 330,239" fill="#FF9800"/>
+  
+  <ellipse cx="380" cy="240" rx="15" ry="8" fill="white"/>
+  <circle cx="370" cy="235" r="8" fill="white"/>
+  <polygon points="360,235 355,237 360,239" fill="#FF9800"/>
+  
+  <!-- Score indicator -->
+  <rect x="300" y="20" width="80" height="40" fill="#333" rx="5"/>
+  <text x="315" y="35" fill="white" font-size="12" font-family="Arial">SEAGULLS</text>
+  <text x="330" y="50" fill="#FFD700" font-size="16" font-family="Arial">42</text>
+</svg>
