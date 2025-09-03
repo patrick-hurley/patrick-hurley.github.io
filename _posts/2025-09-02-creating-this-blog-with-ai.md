@@ -6,7 +6,7 @@ tags: [ai, jekyll]
 display: 'featured'
 ---
 
-With this blog being focused on AI, it felt fitting to use its creation as a chance to test the current capabilities of LLMs. I decided to use the recently released `ChatGPT-5` model, starting by asking for the pros and cons of four blog options:
+With this blog being focused on AI, it felt fitting to use its creation as a chance to test the current capabilities of LLMs. I decided to use the recently released `gpt-5` model, starting by asking for the pros and cons of four blog options:
 	
 1.	Use an existing platform such as Hashnode or Medium
 2.	Build a simple HTML document
