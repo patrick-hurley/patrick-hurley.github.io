@@ -55,18 +55,7 @@ layout: default
             {% endfor %}
         </div>
 
-        <!-- Sidebar column -->
-        <div class="sidebar">
-            {% if featured_posts.size > 0 %}
-            <div class="featured">
-                <h2>Featured</h2>
-                <ul>
-                    {% for post in featured_posts %}
-                    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-            {% endif %}
-        </div>
+        <!-- Include the sidebar component -->
+        {% include sidebar.html %}
     </div><!--/col-container-->
 </div><!--/home-->
