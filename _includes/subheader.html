@@ -11,7 +11,7 @@
             {% assign tag_counts = tag_counts | reverse %}
 
             <div class="top-tags">
-                <p>Top tags:</p>
+                <p class="hide-mobile">Top tags:</p>
                 <ul>
                     {% assign count = 0 %}
                     {% for tag in tag_counts %}
@@ -24,7 +24,7 @@
                         </a>
                     </li>
                     {% assign count = count | plus: 1 %}
-                    {% if count == 5 %}
+                    {% if count == 3 %}
                     {% break %}
                     {% endif %}
                     {% endfor %}
