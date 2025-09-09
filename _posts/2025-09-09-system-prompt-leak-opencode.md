@@ -12,11 +12,8 @@ The reasoning loop seemingly exposed some internal system prompts, but most inte
 
 ```text
 - But guidelines say avoid unnecessary preamble.
-
 - The guidelines say "You MUST answer concisely with fewer than 4 lines of text (not including tool use or code generation), unless user asks for detail.
-
 - The guidelines say "One word answers are best." but this is not a simple question.
-
 - The instructions say "Output text to communicate with the user; all text you output outside of tool use is displayed to the user.
 ```
 
