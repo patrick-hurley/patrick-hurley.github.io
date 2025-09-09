@@ -65,8 +65,8 @@ $color-accent: #b214ab;
     flex-direction: column;
   }
   .main-content, .sidebar {
-    flex: 1 1 100%;
-    min-width: 100%;
+    display: block;
+    width: 100%;
   }
 }
 
