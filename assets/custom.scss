@@ -2,6 +2,9 @@
 ---
 $color-accent: #b214ab;
 
+* {
+    box-sizing: border-box;
+}
 .wrapper {
     max-width: -webkit-calc(940px - (30px * 2));
     max-width: calc(940px - (30px * 2));
