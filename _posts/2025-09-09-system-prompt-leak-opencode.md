@@ -48,5 +48,5 @@ The answer is the response.
 Yes.
 ```
 
-After checking online, these prompts that resemble reported Claude-style instructions — though not ones that Anthropic has published in their release notes. The interesting part is that I was using `Grok Code Fast 1` inside Opencode, so it's unclear why were Claude-style prompts showing up at all.
+After checking online, these prompts resemble reported Claude-style instructions, though not ones that Anthropic has published in their release notes. The interesting part is that I was using `Grok Code Fast 1` inside Opencode, so it's unclear why there were Claude-style prompts showing up at all.
 
