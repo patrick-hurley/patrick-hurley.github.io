@@ -267,3 +267,8 @@ a, a:visited {
     color: $color-accent;
     text-decoration: underline;
 }
+
+/* Code wrap */
+pre.highlight {
+    white-space:pre-line;
+}
