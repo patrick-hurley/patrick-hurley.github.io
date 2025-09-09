@@ -29,6 +29,8 @@ $color-accent: #b214ab;
 
 .main-content {
   flex: 1;
+  overflow: hidden;
+  min-width: 0;
 }
 
 .sidebar {
@@ -266,9 +268,4 @@ a, a:visited {
 .content a {
     color: $color-accent;
     text-decoration: underline;
-}
-
-/* Code wrap */
-pre.highlight {
-    white-space:pre-line;
 }
