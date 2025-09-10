@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "System prompt leak through Opencode reasoning loop"
-date: 2025-09-08 09:41:00 +0100
+date: 2025-09-09 09:41:00 +0100
 tags: [ai, prompt-leak, agentic-coding]
 display: "featured"
 ---
