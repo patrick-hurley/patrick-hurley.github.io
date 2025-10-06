@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hallucination reminder"
-date: 2025-10-08 14:42:00 +0100
+date: 2025-10-06 14:42:00 +0100
 tags: [ai]
 ---
 I'm getting so used to 'talking' to generative AI like a real person that it feels like a nice reality check when a conversation completely derails now and again. It hasn't happened for a while and I feel like it was making me trust the responses too much. Here's a great example.
