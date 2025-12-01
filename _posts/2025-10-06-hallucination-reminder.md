@@ -48,7 +48,7 @@ And it happily gave me the JSON below:
 Hmm - maybe I'm wrong? So I check the budgets.json file, and no - there is definitely no **"Coffee and Beverage"** budget. So I asked Claude:
 
 ```text
-Just to check, are you sure? Are you not just imagining that response?
+Are you sure you didn't make up that response?
 ```
 
 To which it responded:
