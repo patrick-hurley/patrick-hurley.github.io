@@ -20,7 +20,6 @@ layout: default
             {% if post_date != last_date %}
             {% unless forloop.first %}
             {% endunless %}
-            <h3 class="home-date">{{ post_date }}</h3>
             {% assign last_date = post_date %}
             {% endif %}
 
